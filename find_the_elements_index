@@ -1,0 +1,23 @@
+public class findtheelementanditsindex {
+public static void main(String[] args) {
+	int[] arr = {10,20,30,40,50,12,60};
+	int find = Find(arr);
+	System.out.println(find);
+	
+}
+
+public static int Find(int[] arr )
+
+
+{
+ Scanner scn = new Scanner(System.in);
+ int ele = scn.nextInt();
+ 
+	for(int idx = 0; idx<arr.length; idx++){
+		if(arr[idx] == ele){
+			return idx;
+		}
+	}
+	return -1;
+}
+}
