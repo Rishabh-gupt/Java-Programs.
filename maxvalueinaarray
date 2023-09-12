@@ -1,0 +1,17 @@
+public class maxvalueinarray {
+public static void main(String[] args) {
+	int[] arr = {10, 20, -4, 20, 19, 99, -98, 12, 25};
+	int max = Max(arr);
+	System.out.println(max);
+}
+
+public static int Max(int[] arr) {
+	int jeb = Integer.MIN_VALUE;
+	for(int aam : arr){
+		if(aam> jeb){
+			jeb = aam;// TODO Auto-generated method stub
+		}
+	}
+	return jeb;
+}
+}
